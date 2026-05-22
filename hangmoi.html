@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hàng Mới Về - Quê Hương Sneakers</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lexend', 'sans-serif'],
+                        "headline-md": ['Lexend', 'sans-serif'],
+                        "label-bold": ['Lexend', 'sans-serif'],
+                        "display-xl-mobile": ['Lexend', 'sans-serif'],
+                        "headline-lg": ['Lexend', 'sans-serif'],
+                        "caption": ['Lexend', 'sans-serif'],
+                        "body-lg": ['Lexend', 'sans-serif'],
+                        "body-md": ['Lexend', 'sans-serif'],
+                        "display-xl": ['Lexend', 'sans-serif']
+                    },
+                    colors: {
+                        "primary": "#00288e", "surface-variant": "#e1e2e4", "surface-bright": "#f8f9fb",
+                        "on-primary": "#ffffff", "surface-container": "#edeef0", "background": "#f8f9fb", "secondary": "#1f6c3a",
+                        "on-surface-variant": "#444653", "surface-container-highest": "#e1e2e4", "secondary-container": "#a4f1b2",
+                        "primary-container": "#1e40af", "on-surface": "#191c1e", "surface-container-lowest": "#ffffff", 
+                        "outline-variant": "#c4c5d5", "surface-container-low": "#f3f4f6"
+                    },
+                    spacing: {
+                        "unit": "8px", "margin-desktop": "64px", "margin-mobile": "20px", "container-max": "1280px", "gutter": "24px", "section-padding": "120px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-white min-h-screen flex flex-col">
+
+  <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8 h-[68px] flex items-center justify-between gap-4 md:gap-8">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 20 C4 20 8 10 16 10 C20 10 22 8 26 6" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M16 10 C16 10 20 10 22 7" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="16" cy="22" rx="12" ry="4" fill="#1e293b" opacity="0.12"/>
+          <path d="M6 20 Q10 16 16 16 Q22 16 26 14" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M20 13 L22 9 L26 8 L24 12Z" fill="#3b82f6"/>
+          <path d="M23 9 L28 7" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M24 11 L29 10" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="text-[11px] font-extrabold text-slate-800 uppercase leading-snug tracking-wider">QUÊ HƯƠNG<br><span class="font-black">SNEAKERS</span></span>
+      </a>
+
+      <nav class="hidden md:flex gap-7 items-center flex-1 justify-center">
+        <a href="index.html" class="text-[14px] font-medium text-slate-800 hover:text-blue-500 transition-colors whitespace-nowrap">Shop</a>
+        <a href="hangmoi.html" class="text-[14px] font-medium text-blue-600 hover:text-blue-500 transition-colors whitespace-nowrap">Hàng mới về</a>
+        <a href="cauchuyen.html" class="text-[14px] font-medium text-slate-800 hover:text-blue-500 transition-colors whitespace-nowrap">Về chúng tôi</a>
+      </nav>
+
+      <div class="flex items-center gap-1 md:gap-3 shrink-0">
+        <div class="hidden lg:flex items-center gap-2 bg-slate-100 rounded-full py-2 px-4 min-w-[220px]">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" class="shrink-0"><circle cx="9" cy="9" r="6" stroke="#94a3b8" stroke-width="1.8"/><path d="M13.5 13.5L17 17" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." class="bg-transparent border-none outline-none text-[13px] text-slate-800 w-full placeholder-slate-400 p-0 focus:ring-0">
+        </div>
+        
+        <a href="giohang.html" class="w-10 h-10 rounded-full flex items-center justify-center text-slate-800 hover:bg-blue-50 hover:text-blue-500 transition-colors" aria-label="Giỏ hàng">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </a>
+        <button class="w-10 h-10 rounded-full flex items-center justify-center text-slate-800 hover:bg-blue-50 hover:text-blue-500 transition-colors" aria-label="Tài khoản">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        
+        <button class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px] text-slate-800" id="hamburger" aria-label="Menu">
+          <span class="block w-[22px] h-[2px] bg-slate-800 rounded-sm"></span>
+          <span class="block w-[22px] h-[2px] bg-slate-800 rounded-sm"></span>
+          <span class="block w-[22px] h-[2px] bg-slate-800 rounded-sm"></span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="hidden flex-col border-t border-slate-200 px-8 py-4 bg-white shadow-lg" id="mobileNav">
+      <a href="index.html" class="py-2.5 border-b border-slate-100 text-[15px] font-medium text-slate-800 hover:text-blue-500">Shop</a>
+      <a href="hangmoi.html" class="py-2.5 border-b border-slate-100 text-[15px] font-medium text-blue-600 hover:text-blue-500">Hàng mới về</a>
+      <a href="cauchuyen.html" class="py-2.5 text-[15px] font-medium text-slate-800 hover:text-blue-500">Về chúng tôi</a>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-[100px] pb-section-padding">
+    <section class="px-margin-mobile md:px-margin-desktop mb-section-padding max-w-container-max mx-auto reveal">
+      <div class="relative w-full h-[60vh] min-h-[500px] rounded-[32px] overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.04)]">
+        <div class="absolute inset-0 bg-surface-variant">
+          <img src="./images/88.jpeg" alt="Latest Collection" class="w-full h-full object-cover" onerror="this.style.backgroundColor='#1e293b'"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 md:p-16 w-full md:w-2/3">
+          <h1 class="text-[32px] md:text-[48px] font-bold text-white mb-4">Bước Chân Di Sản</h1>
+          <p class="text-[18px] text-white/90 mb-8 max-w-xl">Khám phá bộ sưu tập mới nhất lấy cảm hứng từ vẻ đẹp hùng vĩ của thiên nhiên Việt Nam. Sự kết hợp hoàn hảo giữa di sản văn hóa và công nghệ hiện đại.</p>
+          <button class="bg-primary-container text-white font-bold py-3 px-8 rounded-[24px] shadow-[0px_20px_40px_rgba(30,64,175,0.1)] hover:bg-primary transition-colors duration-300">
+            Khám Phá Ngay
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-margin-mobile md:px-margin-desktop mb-section-padding max-w-container-max mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 reveal">
+        <div>
+            <h2 class="text-[32px] md:text-[40px] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-blue-500 to-cyan-400 drop-shadow-sm pb-1">
+                Hàng Mới Về
+            </h2>
+        </div>
+    
+      
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter items-stretch">
+        
+        <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNgXW9CiKrmegtU447DDUTj5QaPC4mcBHOrrSlZXg-e9BpOcog0ULrx-11d7k5NAv7Ia8aGxFacSMaMtLKMISNqOzMuDqgawrpTqJHRkFG6HIqMpyC9P54WflLuGZSU4nuk_cszhccu_Kf6c6mvcnVUvJ2tiFOijUOJ9mSQeGU3UkRT22xcOyHniasZxZd_tPum2OOTMMeJRNA1JY14I4ETKbMgMZP9S7UxP_DUVgoczNn6xrsvzNGAercu-P0BzwSGQUngylBMGHX" 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Ninh Binh Karst Edition">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">Ninh Binh Karst Edition</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">2.850.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+        <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYFmjOijSTdv3rV2HqyatUfYylVQZwSJSzcwDGML-W1N825almc-txh5UYU_Ig-T7DiZZ3Rve183up_yieYjX-dKK5xrM0ni_pYlKNAfKwfEsO38nmqdFHVoutrkW61ejgzgNtBTmNlNX2cAZLiYFfrEMewohxWeg7rBMhw3Fx0OY1El1BzG97KyrPvpkvgC6AJ9FXkuwG0UQqE83jmCSrSg7K12-9Q-_DD4Mpiktm0nPAVYaRJ6auEVm0hzPSODdYClUt8eT5M5yo" 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Da Nang Golden Bridge">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">Da Nang Golden Bridge</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">3.200.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+        <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Lr5b_L0U6G8KOCHLX7BJtXGoOgYM6GbXZ34nvTvcYJtftLfYglULi2ytoLQi4I9S-DewUgsMTeZzkq4CqusJKk1g7UIDJGx9eLnSNWDblltbBx_aZO7OuoD1iCDC6Ifrx2JJiczlENXxMLcLRtr4ar0E6AdOAe1Bv8IkhBkemFG-hW6NsSOfrRnbxv2ha4WS-W2YC4Npg0SwA5dc_OHi0EjO-8V6BD6xXz0Na48eKUnq6nexDDqkdbHq-ncTIPMzxXCW9pf2VKiD" 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Mui Ne Sunset Runner">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">Mui Ne Sunset Runner Pro</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">2.450.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+
+ <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="./images/31.png" alt="Louis Vuitton Sunset Runner"
+                 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Mui Ne Sunset Runner">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">Louis Vuitton Sunset Runner</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">22.450.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+
+ <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="./images/33.avif" alt="Jordan CMFT Era"
+                 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Mui Ne Sunset Runner">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">Jordan CMFT Era </h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">12.450.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+         <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="./images/32.avif" alt="LV BUTTERSOFT"
+                 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Mui Ne Sunset Runner">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">LV BUTTERSOFT</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">129.450.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+   <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="./images/34.avif" alt="LV Tilted Sneaker"
+                 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Mui Ne Sunset Runner">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">LV Tilted Sneaker</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">129.450.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+        <div class="group flex flex-col bg-surface-container-lowest rounded-[24px] p-4 shadow-[0px_10px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-transform duration-300">
+            <div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low mb-6 overflow-hidden shrink-0">
+                <div class="absolute top-3 left-3 bg-secondary text-on-secondary font-caption text-caption px-3 py-1 rounded-full z-10">Mới</div>
+                <img src="./images/giay.jpg" 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Quy Shoes Limited">
+                      <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+            </div>
+            <div class="px-2 flex flex-col flex-grow">
+                <h3 class="font-headline-md text-[20px] text-on-surface mb-2">Quy Shoes Limited</h3>
+                <p class="font-label-bold text-label-bold text-primary mb-4">21.900.000đ</p>
+                <button class="mt-auto w-full h-12 border-2 border-primary text-primary font-label-bold text-label-bold rounded-[24px] hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+  </main>
+
+  <footer class="bg-slate-800 text-slate-400 pt-14 pb-8 px-4 md:px-8 mt-auto">
+    <div class="max-w-[1280px] mx-auto reveal">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20 C4 20 8 10 16 10 C20 10 22 8 26 6" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M6 20 Q10 16 16 16 Q22 16 26 14" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M20 13 L22 9 L26 8 L24 12Z" fill="#3b82f6"/>
+              <path d="M23 9 L28 7" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="text-[12px] font-extrabold text-white uppercase tracking-wider leading-snug">QUÊ HƯƠNG SNEAKERS</span>
+          </div>
+          <p class="text-[13px] leading-[1.75] mb-5 text-slate-400">Đưa bạn đi xa hơn với từng bước chân, kết nối bạn với thiên nhiên và văn hóa Việt Nam.</p>
+          <div class="flex gap-2.5">
+            <a href="https://www.facebook.com/quy.truong.175346/?locale=vi_VN" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition-all" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition-all" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1e293b"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition-all" aria-label="Website">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-[14px] font-bold text-white mb-4.5 tracking-wide">Cửa hàng</h4>
+          <ul class="flex flex-col gap-2.5">
+            <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Tất cả sản phẩm</a></li>
+            <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Giày chạy bộ</a></li>
+            <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Giày thời trang</a></li>
+             <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Phụ kiện</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-[14px] font-bold text-white mb-4.5 tracking-wide">Hỗ trợ</h4>
+          <ul class="flex flex-col gap-2.5">
+            <li><a href="chonsize.html" class="text-[13px] text-slate-400 hover:text-white transition-colors">Hướng dẫn chọn size</a></li>
+            <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Chính sách đổi trả</a></li>
+            <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Vận chuyển & Giao hàng</a></li>
+            <li><a href="#" class="text-[13px] text-slate-400 hover:text-white transition-colors">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-[14px] font-bold text-white mb-4.5 tracking-wide">Liên hệ</h4>
+          <ul class="flex flex-col gap-3.5">
+            <li class="flex items-start gap-2.5 text-[13px] text-slate-400 leading-[1.6]">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="mt-[2px] shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.66-.66a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              <span>0842 828 775</span>
+            </li>
+            <li class="flex items-start gap-2.5 text-[13px] text-slate-400 leading-[1.6]">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="mt-[2px] shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contact@quehuongsneakers.vn</span>
+            </li>
+            <li class="flex items-start gap-2.5 text-[13px] text-slate-400 leading-[1.6]">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="mt-[2px] shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 Lê Lợi, Quận 1,<br>TP. Hồ Chí Minh</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 flex justify-between items-center flex-wrap gap-3 text-[12px]">
+        <p class="text-slate-500">© 2026 Quê Hương Sneakers. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="#" class="text-slate-500 hover:text-white transition-colors">Bảo mật</a>
+          <a href="#" class="text-slate-500 hover:text-white transition-colors">Điều khoản</a>
+           <a href="#" class="text-slate-500 hover:text-white transition-colors">Cookie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Xử lý menu Mobile Tailwind
+    const ham = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    if (ham && mobileNav) {
+      ham.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+        mobileNav.classList.toggle('flex');
+      });
+    }
+h
+    // Scroll reveal Animation
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

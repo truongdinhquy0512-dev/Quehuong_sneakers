@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quê Hương Sneakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a class="logo" href="#">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 20 C4 20 8 10 16 10 C20 10 22 8 26 6" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M16 10 C16 10 20 10 22 7" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="16" cy="22" rx="12" ry="4" fill="#1e293b" opacity="0.12"/>
+          <path d="M6 20 Q10 16 16 16 Q22 16 26 14" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M20 13 L22 9 L26 8 L24 12Z" fill="#3b82f6"/>
+          <path d="M23 9 L28 7" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M24 11 L29 10" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">QUÊ HƯƠNG<br><span class="logo-sub">SNEAKERS</span></span>
+      </a>
+
+      <!-- Nav -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Shop</a>
+        <a href="hangmoi.html" class="nav-link">Hàng mới về</a>
+        <a href="cauchuyen.html" class="nav-link">Về chúng tôi</a>
+        <a href="THWeb.html" class="nav-link">Lab TH</a>
+      </nav>
+
+      <!-- Right: Search + Icons -->
+      <div class="header-right">
+        <div class="search-bar">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="#94a3b8" stroke-width="1.8"/><path d="M13.5 13.5L17 17" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." class="search-input">
+        </div>
+        <button class="icon-btn" aria-label="Giỏ hàng">
+          <a href="giohang.html" class="icon-btn"aria-label="Giỏ hàng">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Tài khoản">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile nav drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#" class="nav-link">Shop</a>
+      <a href="#" class="nav-link">Hàng mới về</a>
+      <a href="#" class="nav-link">Về chúng tôi</a>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <img class="hero-bg" src="./images/cảnh.png" alt="Phong cảnh Việt Nam" onerror="this.style.background='linear-gradient(135deg,#1a3a5c,#0f2847)';this.removeAttribute('src')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-tag">Bộ Sưu Tập Mới 2026</div>
+        <h1 class="hero-title">
+          <span class="white">Sải Bước Cùng<br></span>
+          <span class="blue">Thiên Nhiên</span>
+        </h1>
+        <p class="hero-desc">
+          Sự kết hợp hoàn hảo giữa công nghệ thể thao hàng đầu và vẻ<br>
+          đẹp hùng vĩ của thiên nhiên Việt Nam. Mang lại sự êm ái tối đa<br>
+          cho mỗi hành trình.
+        </p>
+        <div class="hero-btns">
+          <button class="btn-primary">Mua Ngay <span class="arrow">→</span></button>
+          <button class="btn-ghost">Xem Bộ Sưu Tập</button>
+        </div>
+      </div>
+      <!-- Floating Best Seller Card -->
+      <div class="best-seller-card">
+        <img class="bs-img" src="./images/88.jpeg" alt="Quy Runner Pro" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2278%22 height=%2278%22><rect width=%2278%22 height=%2278%22 fill=%22%23e2e8f0%22 rx=%2212%22/><text x=%2239%22 y=%2244%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2226%22>👟</text></svg>'">
+        <div class="bs-info">
+          <div class="bs-label">BEST SELLER</div>
+          <div class="bs-name">Quy Runner Pro</div>
+          <div class="bs-price">2.490.000đ</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CATALOG ═══ -->
+    <section class="catalog">
+      <div class="catalog-header">
+        <div>
+          <h2 class="catalog-title">Danh Mục Sản Phẩm</h2>
+          <p class="catalog-sub">Tìm kiếm đôi giày phù hợp với phong cách của bạn</p>
+        </div>
+        <div class="filter-tabs">
+          <button class="tab active" onclick="setTab(this)">Chạy bộ</button>
+          <button class="tab" onclick="setTab(this)">Thời trang</button>
+          <button class="tab" onclick="setTab(this)">Tập luyện</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- 1 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/20.jpg" alt="Hai Phong Runner Pro Elite" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <span class="badge-new">Mới</span>
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Hai Phong Runner<br>Pro Elite</span>
+              <span class="card-price">2.490k</span>
+            </div>
+            <p class="card-desc">Công nghệ đệm khí êm ái, tối ưu cho việc chạy bộ đường trường.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/19.avif " alt="Azure Sport V2" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Azure Sport V2</span>
+              <span class="card-price">5.850k</span>
+            </div>
+            <p class="card-desc">Trọng lượng siêu nhẹ, thiết kế thoáng khí cho các bài tập cường độ cao.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/35.jpg" alt="Ha Long Edition" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Ha Long Edition</span>
+              <span class="card-price">3.200k</span>
+            </div>
+            <p class="card-desc">Phiên bản giới hạn với màu sắc lấy cảm hứng từ biển đảo Việt Nam.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/18.avif" alt="Urban Walker X" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Urban Walker X</span>
+              <span class="card-price">4.900k</span>
+            </div>
+            <p class="card-desc">Tối giản và tinh tế, phù hợp cho mọi hoạt động hàng ngày.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/4.jpg" alt="Mui Ne Walker" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Mui Ne Walker</span>
+              <span class="card-price">3.100k</span>
+            </div>
+            <p class="card-desc">Được tạo ra từ cảm hứng của những cơn sóng lả lướt trên mặt biển Mũi Né.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/5.jpg" alt="VungTau Luxury" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">VungTau Luxury</span>
+              <span class="card-price">9.800k</span>
+            </div>
+            <p class="card-desc">Thiết kế tinh tế lấy cảm hứng từ hệ sinh thái biển Vũng Tàu.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/96.png" alt="Ha Long Edition 2" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">Ha Long Edition 2</span>
+              <span class="card-price">5.999k</span>
+            </div>
+            <p class="card-desc">Kiểu dáng trẻ trung, lịch sự, thích hợp cho những chuyến dã ngoại.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="./images/2.jpg" alt="SaiGon Spirit" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><rect width=%22300%22 height=%22300%22 fill=%22%23f1f5f9%22/><text x=%22150%22 y=%22160%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2260%22>👟</text></svg>'">
+            <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-name">SaiGon Spirit</span>
+              <span class="card-price">3.200k</span>
+            </div>
+            <p class="card-desc">Vẻ đẹp tráng lệ của Sài Gòn được thu nhỏ vào từng đường nét thiết kế.</p>
+            <button class="btn-buy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              Mua ngay
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ WHY / FEATURES ═══ -->
+    <section class="why" id="why">
+      <div class="why-inner">
+        <div class="why-img-col">
+          <div class="why-img-bg">
+            <img class="why-img" src="./images/99.png" alt="Giày da đỏ" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22><rect width=%22400%22 height=%22400%22 fill=%22%23dbeafe%22 rx=%2220%22/><text x=%22200%22 y=%22220%22 text-anchor=%22middle%22 fill=%22%2393c5fd%22 font-size=%22120%22>👞</text></svg>'">
+          </div>
+        </div>
+        <div class="why-text-col">
+          <h2 class="why-title">Tại sao chọn quê hương Sneakers?</h2>
+          <div class="why-features">
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+              </div>
+              <div>
+                <div class="why-item-title">Thân thiện môi trường</div>
+                <p class="why-item-desc">Sử dụng 30% vật liệu tái chế từ các làng nghề truyền thống Việt Nam.</p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div>
+                <div class="why-item-title">Công nghệ phản lực</div>
+                <p class="why-item-desc">Đế giày thiết kế đa tầng giúp hoàn trả năng lượng tối ưu khi di chuyển.</p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <div class="why-item-title">Chất lượng cao cấp</div>
+                <p class="why-item-desc">Được kiểm định bởi các vận động viên chuyên nghiệp hàng đầu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BRAND TEXT ═══ -->
+    <section class="brand-text">
+      <p>Các thiết kế giày của Quê Hương mang cảm hứng từ thiên nhiên Việt Nam, thể hiện vẻ đẹp mộc mạc nhưng tinh tế qua màu sắc và họa tiết gợi nhớ đến rừng cây, đồi và sông nước. Mỗi đôi giày là sự kết hợp giữa phong cách hiện đại và bản sắc thiên nhiên, tạo nên sản phẩm vừa thời trang vừa gần gũi. Từng chi tiết được chăm chút nhằm mang lại sự thoải mái, bền bỉ và đầu ôn nháng, thể hiện tình thần sáng tạo và vẻ đẹp đặc trưng của thiên nhiên Việt Nam.</p>
+    </section>
+
+  </div><!-- end .page-wrapper -->
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <svg class="footer-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20 C4 20 8 10 16 10 C20 10 22 8 26 6" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M6 20 Q10 16 16 16 Q22 16 26 14" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M20 13 L22 9 L26 8 L24 12Z" fill="#3b82f6"/>
+              <path d="M23 9 L28 7" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="footer-logo-text">QUÊ HƯƠNG SNEAKERS</span>
+          </div>
+          <p class="footer-brand-desc">Đưa bạn đi xa hơn với từng bước chân, kết nối bạn với thiên nhiên và văn hóa Việt Nam.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/quy.truong.175346/?locale=vi_VN" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1e293b"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Cửa hàng -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Cửa hàng</h4>
+          <ul class="footer-links">
+            <li><a href="#">Tất cả sản phẩm</a></li>
+            <li><a href="#">Giày chạy bộ</a></li>
+            <li><a href="#">Giày thời trang</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hỗ trợ -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hỗ trợ</h4>
+          <ul class="footer-links">
+            <li><a href="chonsize.html">Hướng dẫn chọn size</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Vận chuyển &amp; Giao hàng</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Liên hệ -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Liên hệ</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.66-.66a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              <span>0842 828 775</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contact@quehuongsneakers.vn</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 Lê Lợi, Quận 1,<br>TP. Hồ Chí Minh</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Quê Hương Sneakers. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Bảo mật</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Cookie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function setTab(btn) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    function toggleWish(btn) {
+      btn.classList.toggle('wished');
+      btn.textContent = btn.classList.contains('wished') ? '♥' : '♡';
+    }
+    // Hamburger
+    const ham = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    // Scroll reveal
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

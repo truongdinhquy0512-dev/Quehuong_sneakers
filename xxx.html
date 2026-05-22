@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quê Hương Sneakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <img class="hero-bg" src="cảnh.png" alt="Phong cảnh Việt Nam">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Bộ Sưu Tập Mới 2026</div>
+      <h1 class="hero-title">
+        <span class="white">Sải Bước Cùng<br></span>
+        <span class="blue">Thiên Nhiên</span>
+      </h1>
+      <p class="hero-desc">
+        Sự kết hợp hoàn hảo giữa công nghệ thể thao hàng đầu và vẻ<br>
+        đẹp hùng vĩ của thiên nhiên Việt Nam. Mang lại sự êm ái tối đa<br>
+        cho mỗi hành trình.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary">Mua Ngay <span class="arrow">→</span></button>
+        <button class="btn-ghost">Xem Bộ Sưu Tập</button>
+      </div>
+    </div>
+    <!-- Floating Best Seller Card -->
+    <div class="best-seller-card">
+      <img class="bs-img" src="lv.avif" alt="Quy Runner Pro">
+      <div class="bs-info">
+        <div class="bs-label">BEST SELLER</div>
+        <div class="bs-name">Quy Runner Pro</div>
+        <div class="bs-price">2.490.000đ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CATALOG ═══ -->
+  <section class="catalog">
+    <div class="catalog-header">
+      <div>
+        <h2 class="catalog-title">Danh Mục Sản Phẩm</h2>
+        <p class="catalog-sub">Tìm kiếm đôi giày phù hợp với phong cách của bạn</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="tab active" onclick="setTab(this)">Chạy bộ</button>
+        <button class="tab" onclick="setTab(this)">Thời trang</button>
+        <button class="tab" onclick="setTab(this)">Tập luyện</button>
+      </div>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- 1: Hai Phong Runner -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="11.jpg" alt="Hai Phong Runner Pro Elite">
+          <span class="badge-new">Mới</span>
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">Hai Phong Runner<br>Pro Elite</span>
+            <span class="card-price">2.490k</span>
+          </div>
+          <p class="card-desc">Công nghệ đệm khí êm ái, tối ưu cho việc chạy bộ đường trường.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 2: Azure Sport V2 -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="12.jpg" alt="Azure Sport V2">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">Azure Sport V2</span>
+            <span class="card-price">1.850k</span>
+          </div>
+          <p class="card-desc">Trọng lượng siêu nhẹ, thiết kế thoáng khí cho các bài tập cường độ cao.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 3: Ha Long Edition -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="13.jpg" alt="Ha Long Edition">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">Ha Long Edition</span>
+            <span class="card-price">3.200k</span>
+          </div>
+          <p class="card-desc">Phiên bản giới hạn với màu sắc lấy cảm hứng từ biển đảo Việt Nam.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 4: Urban Walker X -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="15.jpg" alt="Urban Walker X">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">Urban Walker X</span>
+            <span class="card-price">2.100k</span>
+          </div>
+          <p class="card-desc">Tối giản và tinh tế, phù hợp cho mọi hoạt động hàng ngày.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 5: Mui Ne Walker -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="4.jpg" alt="Mui Ne Walker">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">Mui Ne Walker</span>
+            <span class="card-price">3.100k</span>
+          </div>
+          <p class="card-desc">Được tạo ra từ cảm hứng của những cơn sóng lả lướt trên mặt biển Mũi Né.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 6: VungTau Luxury -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="5.jpg" alt="VungTau Luxury">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">VungTau Luxury</span>
+            <span class="card-price">9.800k</span>
+          </div>
+          <p class="card-desc">Thiết kế tinh tế lấy cảm hứng từ hệ sinh thái biển Vũng Tàu.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 7: Ha Long Edition 2 (dùng lv.avif) -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="22.jpg" alt="Ha Long Edition 2">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">Ha Long Edition</span>
+            <span class="card-price">3.999k</span>
+          </div>
+          <p class="card-desc">Kiểu dáng trẻ trung, lịch sự, thích hợp cho những chuyến dã ngoại.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+      <!-- 8: SaiGon Spirit -->
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="2.jpg" alt="SaiGon Spirit">
+          <button class="wish-btn" onclick="toggleWish(this)">♡</button>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-name">SaiGon Spirit</span>
+            <span class="card-price">3.200k</span>
+          </div>
+          <p class="card-desc">Vẻ đẹp tráng lệ của Sài Gòn được thu nhỏ vào từng đường nét thiết kế.</p>
+          <button class="btn-buy">Mua ngay <span class="arr-sm">↗</span></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ WHY ═══ -->
+  <section class="why"> 
+    <div class="why-inner">
+      <div class="why-img-col">
+        <img class="why-img" src="23.jpg" alt="SaiGon Spirit shoe">
+      </div>
+      <div class="why-text-col">
+        <h2 class="why-title">Tại sao chọn quê hương Sneakers?</h2>
+        <div class="why-features">
+          <div class="why-item reveal">
+            <div class="why-icon">✓</div>
+            <div>
+              <div class="why-item-title">Thân thiện môi trường</div>
+              <p class="why-item-desc">Sử dụng 30% vật liệu tái chế từ các làng nghề truyền thống Việt Nam.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-icon">✓</div>
+            <div>
+              <div class="why-item-title">Công nghệ phản lực</div>
+              <p class="why-item-desc">Đế giày thiết kế đa tầng giúp hoàn trả năng lượng tối ưu khi di chuyển.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-icon">✓</div>
+            <div>
+              <div class="why-item-title">Chất lượng cao cấp</div>
+              <p class="why-item-desc">Được kiểm định bởi các vận động viên chuyên nghiệp hàng đầu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+function setTab(btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+}
+function toggleWish(btn) {
+  btn.classList.toggle('wished');
+  btn.textContent = btn.classList.contains('wished') ? '♥' : '♡';
+}
+const io = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
